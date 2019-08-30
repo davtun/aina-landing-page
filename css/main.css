@@ -136,6 +136,10 @@ body {
         right: 0;
     }
 
+    .level {
+        width: 100% !important;
+    }
+
 }
 
 
