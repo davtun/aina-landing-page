@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/src7afg.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="bulma-0.7.5/css/bulma.css">
+    <title>Aina</title>
+</head>
+<body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" >
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="imgs/logo.svg" width="112" height="28">
+          </a>
+          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+ 
+          <div class="navbar-end navbar-menu" id="navMenu">
+            <div class="navbar-item">
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-reddit-alien"></i>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <section class="hero hero-bluish">
+      <div class="hero-body columns columns-reverse">
+        <div class="column">
+          <div class="iphones">
+            <img class="main-phone iphone iphone-main" src="imgs/iphone8plusspacegrey_portrait.png">
+            <img class="secondary-phone iphone-main" src="imgs/iphone8plusspacegrey_portrait-(1).png">
+          </div>
+        </div>
+        
+              
+          
+        <div class="column">
+          <div class="container texts"> 
+            <h1 class="title">
+                Tu mejor aliado para 
+                encontrar un nuevo hogar
+            </h1>
+            <h2 class="subtitle">
+                Encuentra en Aina toda la información que necesitas y 
+                úsala de guía para buscar tu nueva ciudad.
+            </h2>
+            <div class="badges">
+              <img class="appstore" src="imgs/Download_on_the_App_Store_Badge_ES_RGB_blk_100217.svg">
+              <img class="playstore" src="imgs/google-play-badge.png">
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <img src="imgs/Artboard 2.png" class="is-pulled-left left-logo">
+
+    <section class="hero hero-80">
+      <div class="hero-body columns">
+        <div class="column">
+          <div class="container texts-left">
+            <h1 class="title">
+                La ayuda que necesitas cuando te 
+                estás mudando
+            </h1>
+            <h2 class="subtitle">
+                ¿No sabes qué pasos deberías seguir al irte a 
+                una nueva ciudad? Aina te guía en el proceso
+            </h2>
+          </div>
+        </div>
+        <div class="column">
+          <div class="iphones">
+            <img class="right-phone" src="imgs/iphone8plusspacegrey_portrait-(1).png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero hero-80 hero-tealish">
+      <div class="hero-body columns columns-reverse">
+        <div class="column">
+          <div class="iphones">
+            <img class="left-phone" src="imgs/iphone8plusspacegrey_portrait.png">
+          </div>
+        </div>
+        <div class="column is-three-fifths">
+          <div class="container texts-right">
+            <h1 class="title">
+              Comprueba cuánto cuesta estar en la 
+              ciudad. Sin sorpresas.
+            </h1>
+            <h2 class="subtitle">
+              Aina te indica cuánto cuesta estar en la ciudad que 
+              quieres. Y puedes ajustarlo para adaptarlo a tus
+              necesidades. 
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="imgs/Artboard 2.png" class="is-pulled-right right-logo">
+
+    <div class="hero">
+      <div class="hero-body">
+        <div class="level">
+            <div class="level-item"></div>
+            <div class="level-item">
+              <h1 class="title">Y mucho más</h1>
+            </div>
+            <div class="level-item"></div>
+        </div>
+        <div class="level">
+          <div class="level-item">
+            <i class="fas fa-user-friends"></i>
+          </div>
+          <div class="level-item">
+            <i class="far fa-bell"></i>
+          </div>
+          <div class="level-item">
+            <i class="fas fa-globe-europe"></i>
+          </div>
+        </div>
+        <div class="level">
+          <div class="level-item">
+            <h2 class="subtitle">
+              Eventos en los que <br>
+              adaptarte a la ciudad
+            </h2>
+          </div>
+          <div class="level-item">
+            <h2 class="subtitle">
+              Notificaciones sobre tus <br>
+              próximos pasos
+            </h2>
+          </div>
+          <div class="level-item">
+            <h2 class="subtitle">
+              Eventos en los que <br>
+              adaptarte a la ciudad
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Aina</strong>, made with &hearts; by <a href="https://davidperez.me/">@davtun</a> and <a href="https://www.suzamax.one">@suzamax</a>
+        </p>
+      </div>
+    </footer>
+
+
+     
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

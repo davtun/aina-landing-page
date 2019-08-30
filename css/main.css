@@ -1,0 +1,261 @@
+:root {
+    --bluish: rgb(32, 116, 219);
+    --tealish: rgb(44, 196, 170);
+    --peacock-blue: rgb(6, 72, 171);
+    --seafoam-blue: rgb(91, 231, 210);
+    --night-blue: rgb(6, 23, 46);
+    --green-blue: rgb(9, 166, 138);
+    --blue: rgb(7, 87, 195);
+    --dodger-blue: rgb(76, 156, 243);
+    --light-sky-blue: rgb(219, 227, 235);
+    --greenish-blue: rgb(8, 137, 112);
+    --black: rgb(0, 0, 0);
+    --off-white: rgb(254, 255, 254);
+    --turquoise: --seafoam-blue;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif !important; 
+}
+
+.navbar {
+    background-image: linear-gradient(to right, var(--bluish), var(--dodger-blue)), linear-gradient(to bottom, rgb(216, 216, 216), rgb(216, 216, 216));
+    height: 5em;
+    z-index: 2;
+}
+
+.navbar-burger {
+    color: white !important;
+}
+
+.hero {
+    overflow: hidden;
+    padding-top: 5em;
+}
+
+.hero-bluish {
+    background-image: linear-gradient(to right, var(--bluish), var(--dodger-blue)), linear-gradient(to bottom, rgb(216, 216, 216), rgb(216, 216, 216));
+    margin-top: 1em;
+}
+
+.hero-tealish {
+    position: relative;
+    background-color: var(--tealish);
+}
+
+.hero-bluish h1, .hero-bluish h2,
+.hero-tealish h1, .hero-tealish h2 {
+    color: white;
+}
+
+.hero-bluish h2 {
+    font-size: 1em;
+}
+
+.iphone {
+    filter: drop-shadow(0 0 1em rgba(0,0,0,.33)) !important;
+}
+
+.level-item i {
+    color: var(--tealish) !important;
+    font-size: 7em;
+    text-align: center;
+    padding-left: -1em;
+}
+
+.level-item h2 {
+    text-align: center;
+    padding: 1em 2em;
+}
+
+/**
+ * MOVIL
+ */ 
+
+@media (max-width: 768px) { 
+    .columns-reverse { 
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .column{ width: 100%; }
+    .badges {
+        display: flex;
+        align-items: center;
+    }
+
+    .playstore {
+        height: 59px;
+    }
+
+    .iphones{
+        position: relative;
+        width: auto;
+        height: 20em;
+    }
+
+    .iphone {
+        width: 60vw;
+        position: absolute;
+        bottom: -10em;
+    }
+
+    .main-phone {
+        z-index: 2;
+        right: 1em;
+    }
+
+    .secondary-phone {
+        z-index: 1;
+        transform: scale(.8);
+        right: 40%;
+    }
+
+    .navbar i {
+        color: white;
+        font-size: 1em;
+        margin-left: 2em;
+    }
+
+    .is-active {
+        text-align: right;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .left-logo {
+        float: left;
+        position: absolute;
+        bottom:-10em;
+        left: 0em;
+        width: 70%;
+        z-index: 2;
+    }
+
+    .right-phone {
+        left: 0;
+        right: 0;
+    }
+
+}
+
+
+/*
+ * DESKTOP
+ */
+
+@media screen and (min-width: 768px) {
+
+    .hero-bluish {
+        height: 80vh;
+    }
+
+    .navbar-brand {
+        margin-left: 5em;
+    }
+
+    .navbar i {
+        color: white;
+        font-size: 1em;
+        margin-left: 2em;
+    }
+
+    .navbar-end {
+        margin-right: 5em;
+    }
+
+    .is-active {
+        text-align: right;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .hero-body {
+        margin-top: 1rem !important;
+        padding: 0 !important;
+    }
+
+    .hero-80 {
+        height: 80vh;
+    }
+
+    .iphones{
+        position: relative;
+        width: auto;
+        height: 100%;
+    }
+
+    .iphone-main {
+        width: 20vw;
+        position: absolute;
+    }
+
+    .main-phone {
+        z-index: 2;
+        right: 0;
+    }
+
+    .secondary-phone {
+        z-index: 1;
+        transform: scale(.8);
+        right: 30%;
+    }
+
+    .main-phone, .secondary-phone {
+        bottom: -10em;
+    }
+
+    .badges {
+        display: flex;
+        align-items: center;
+    }
+
+    .playstore {
+        height: 60px;
+    }
+
+    .texts {
+        width: 28em !important;
+        left: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 5em !important;
+    }
+
+    .texts-left {
+        margin-left: 20% !important;
+    }
+
+    .texts-right {
+        margin-right: 20% !important;
+    }
+
+    .left-logo {
+        float: left;
+        width: 20%;
+        position: absolute;
+        bottom: 5em;
+        left: 5em;
+        z-index: 2;
+    }   
+    
+    .right-logo {
+        float: right;
+        width: 20%;
+        position: absolute;
+        transform: rotateY(180deg);
+        bottom: -65em;
+        right: 5em;
+        z-index: 2;
+    }    
+
+    .right-phone {
+        margin-left: 10% !important;
+        width: 25vw;
+    }
+
+    .left-phone {
+        right: 0 !important;
+        margin-left: 25% !important;
+        width: 25vw;
+    }
+
+}
